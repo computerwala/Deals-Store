@@ -1,0 +1,28 @@
+<h1>Deals Admin</h1>
+<a class="btn btn-primary mb-3" (click)="addDeal()">Add New Deal</a>
+<div class="container row">
+  <div class="col-md-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Deal Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let deal of deals">
+          <td>{{deal.id}}</td>
+          <td>{{deal.name}}</td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="viewDeal(deal.id)"> Show Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <app-adddeal *ngIf="action === 'edit' ||action === 'add'" [deal]="selectedDeal" (dealAddedEvent)="refreshData()"></app-adddeal>
+    <app-viewdeal *ngIf="action === 'view'" [deal]="selectedDeal" (dealDeletedEvent)="refreshData()"></app-viewdeal>
+  </div>
+</div>

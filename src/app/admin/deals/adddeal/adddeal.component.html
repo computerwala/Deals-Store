@@ -1,0 +1,21 @@
+<h1>{{deal.id == null ? 'Add' : 'Edit'}} Deals - {{deal.id}}</h1>
+
+<form>
+  <label for="name">Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Deal Name" [(ngModel)]="deal.name" name="name">
+
+  <label for="description">Description</label>
+  <input type="text" class="form-control" id="description" placeholder="description" name="description" [(ngModel)]="deal.description">
+
+  <label for="author">Price</label>
+  <input type="text" class="form-control" id="price" placeholder="price" name="price" [(ngModel)]="deal.price">
+
+  <div class="form-group" *ngIf="deal.id == null">
+
+    <br>
+    <input type="file" (change)="onFileChanged($event)">
+    <img [src]="imgURL" height="200" width="200" *ngIf="imgURL">
+  </div>
+  <br>
+  <button type="button" class="btn btn-success" (click)="saveDeal()">Save Deal</button>
+</form>

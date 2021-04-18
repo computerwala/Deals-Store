@@ -1,0 +1,26 @@
+<h1>Deal Details</h1>
+
+    <table>
+        <tr>
+            <td>Deal Id</td>
+            <td>{{deal.id}}</td>
+        </tr>
+        <tr>
+            <td>Deal Name</td>
+            <td>{{deal.name}}</td>
+        </tr>
+        <tr>
+            <td>Deal description</td>
+            <td>{{deal.description}}</td>
+        </tr>
+        <tr>
+            <td>Deal Price</td>
+            <td>{{deal.price}}</td>
+        </tr>
+    </table>
+    <br>
+    <img src="{{deal.retrievedImage}}" height="200" width="200">
+    <br><br>
+    <a class="btn btn-small btn-warning" (click)="editDeal()">edit</a>   
+    <a class="btn btn-small btn-danger" (click)="deleteDeal()">delete</a>
+
