@@ -2,6 +2,7 @@
     <div class="col-md-2">
         <h1>Deals</h1>
     </div>
+   
     <div class="col-md-10 custom-products-cart-container">
         <div class="offset-md-8">
             <ul class="nav navbar-nav navbar-right">
@@ -12,13 +13,13 @@
                         <span class="fa fa-shopping-cart">
                             Deals Added In Cart:
                         </span>
-                        <span class="caret">{{cartDeals.length}}</span>
+                        <span class="cart">{{cartDeals.length}}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-cart" role="menu">
                         <li *ngFor="let item of cartDeals">
                             <div class="item product-cart-item row">
                                 <div class="col-md-8" *ngIf="item">{{item.name}}</div>
-                                <div class="col-md-4" *ngIf="item"><strong>${{item.price}}</strong></div>
+                                <div class="col-md-4" *ngIf="item"><strong>Rs{{item.price}}</strong></div>
                             </div>
                         </li>
                         <hr>
@@ -31,31 +32,44 @@
             </ul>
         </div>
     </div>
+
 </div>
 
-<hr>
-<hr>
 
-
-
-
-
-<div class="container row">
-    <div class="col-md-4" *ngFor="let deal of deals;let i=index">
-        <div class="card card-block">
-            <img class="custom-image-style" img src="{{deal.retrievedImage}}" height="300" width="200" style="margin-left: 60px;
-          margin-top: 10px">
-            <div class="deal-desc-container row">
-                <div>
-                    <p style="margin-left: 60px"><strong>{{deal.name}}: ${{deal.price}}</strong></p>
-                    <p style="margin-left: 60px">{{deal.author}}</p>
+<!-- offer sec of the page -->
+<section class="offer-sec container pad-top-lg pad-bottom-md">
+    <div class="row">
+        <header class="col-xs-12 text-center header">
+            <h2 class="heading">Today’s Best Offers And Coupons</h2>
+            <ul class="list-unstyled filter-list">
+                <li class="active"><a href="#" data-filter=".health">Health &amp; Beauty</a></li>
+                <li><a href="#" data-filter=".kitchen">Electronics &amp; Kitchen</a></li>
+                <li><a href="#" data-filter=".res">Restaurants</a></li>
+                <li><a href="#" data-filter=".sport">Sports &amp; Fitness</a></li>
+                <li><a href="#" data-filter=".fashion">Fashion &amp; Appareals</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- offer holder of the page -->
+            <div class="offer-holder">
+                <!-- col of the page -->
+                <div class="col mar-bottom-xs health" *ngFor="let deal of deals;let i=index">
+                    <div class="header">
+                        <div class="c-logo"><img src="{{deal.retrievedImage}}" height="150px" width="150px" alt="logo" class="img-responsive"></div>
+                        <span class="offer">Rs{{deal.default}}</span>
+                    </div>
+                    <strong class="heading6">{{deal.name}}</strong>
+                    <span class="sub-title">{{deal.description}}</span>
+                    <div class="text-center">
+                        <button class="btn-warning text-center text-uppercase md-round px-2 py-1" (click)="addToCart(deal.id)">Add To Cart</button>
+                        <time class="time mt-2" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
+                    </div>
                 </div>
-                <div class="offset-md-4 col-md-4">
-                    <button class="btn btn-primary btn-sm" (click)="addToCart(deal.id)"
-                       >Add To Cart</button>
-                </div>
+
+                
             </div>
-
         </div>
     </div>
-</div>
+</section>

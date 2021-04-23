@@ -50,6 +50,9 @@ export class ShopdealComponent implements OnInit {
       dealwithRetrievedImageField.retrievedImage = 'data:image/jpeg;base64,' + deal.picByte;
       dealwithRetrievedImageField.description = deal.description;
       dealwithRetrievedImageField.price = deal.price;
+      dealwithRetrievedImageField.status = deal.status;
+      dealwithRetrievedImageField.discount = deal.discount;
+      dealwithRetrievedImageField.category = deal.category;
       dealwithRetrievedImageField.picByte = deal.picByte;
       this.deals.push(dealwithRetrievedImageField);
     }
@@ -91,11 +94,5 @@ export class ShopdealComponent implements OnInit {
     this.cartDeals = [];
     localStorage.clear();
   }
-
-
-
-
-
-
 
 }

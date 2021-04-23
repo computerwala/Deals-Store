@@ -24,9 +24,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/font-awesome.css",
+              "src/css/plugins.css",
+              "src/css/icons.css",
+              "src/css/style.css",
+              "src/css/colors.css",
+              "src/css/responsive.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery.js",
+              "src/js/plugins.js",
+              "src/js/main.js"              
+            ]
           },
           "configurations": {
             "production": {
@@ -89,9 +98,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/font-awesome.css",
+              "src/css/plugins.css",
+              "src/css/icons.css",
+              "src/css/style.css",
+              "src/css/colors.css",
+              "src/css/responsive.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery.js",
+              "src/js/plugins.js",
+              "src/js/main.js"
+            ]
           }
         },
         "lint": {

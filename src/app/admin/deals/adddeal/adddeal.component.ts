@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Deal } from 'src/app/model/Deal';
@@ -42,11 +42,14 @@ export class AdddealComponent implements OnInit {
 
   saveDeal() {
     if (this.deal.id == null) {
+
+    
+    
     const uploadData = new FormData();
     uploadData.append('imageFile', this.selectedFile, this.selectedFile.name);
     this.selectedFile.imageName = this.selectedFile.name;
 
-    this.httpClient.post('http://localhost:8081/deals/upload', uploadData, { observe: 'response' })
+    this.httpClient.post('http://localhost:8081/deals/upload', uploadData, { observe: 'response'})
       .subscribe((response) => {
         if (response.status === 200) {
           this.httpClientService.addDeal(this.deal).subscribe(

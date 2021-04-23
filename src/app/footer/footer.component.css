@@ -1,0 +1,261 @@
+/* Footer Component */
+#footer {
+    overflow: hidden;
+    background: #252525;
+}
+#footer.footer2 .footer-holder {
+    padding-top: 74px;
+}
+#footer.footer2 .col2 {
+    width: 37.5%;
+    padding: 0 50px 0 71px;
+}
+#footer.footer2 .col3 {
+    width: 17.4%;
+}
+#footer .footer-holder {
+    padding-top: 72px;
+    padding-bottom: 52px;
+    overflow: hidden;
+}
+#footer .footer-area {
+    color: white;
+    padding: 26px 0;
+    overflow: hidden;
+    background: #1e1e1e;
+}
+#footer .footer-area p {
+    margin: 0;
+}
+#footer .col1 {
+    width: 16.7%;
+    float: left;
+}
+#footer .col2 {
+    width: 24%;
+    float: left;
+    padding: 0 0 0 69px;
+}
+#footer .col3 {
+    width: 31%;
+    float: left;
+    padding: 0 30px 0 0;
+}
+#footer .col4 {
+    width: 28.3%;
+    float: left;
+    padding: 0 0 0 5px;
+}
+#footer h3 {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 0 0 18px;
+    letter-spacing: 1px;
+}
+#footer .contact-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+#footer .contact-list li {
+    overflow: hidden;
+    padding: 13px 0;
+    border-top: 1px dashed #8a8a8a;
+}
+#footer .contact-list li:first-child {
+    padding: 0 0 13px;
+    border-top: none;
+}
+#footer .contact-list .icon {
+    font-size: 25px;
+    line-height: 25px;
+    color: #8a8a8a;
+    float: left;
+    margin: 6px 0 0;
+}
+#footer .contact-list .icon.icon-phone, #footer .contact-list .icon.icon-email {
+    font-size: 16px;
+}
+#footer .contact-list address {
+    float: left;
+    margin: 0;
+    width: 86%;
+    color: #8a8a8a;
+    padding: 0 0 0 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+#footer .contact-list .tel,
+#footer .contact-list .mail {
+    float: left;
+    padding: 0 0 0 10px;
+}
+#footer .contact-list a {
+    color: #8a8a8a;
+    display: block;
+}
+#footer .f-nav {
+    font-size: 15px;
+    line-height: 17px;
+    color: #8a8a8a;
+    overflow: hidden;
+    margin: 0;
+    padding: 3px 0 0;
+}
+#footer .f-nav li {
+    overflow: hidden;
+    margin: 0 0 13px;
+}
+#footer .f-nav a {
+    color: #8a8a8a;
+    transition: all 0.25s linear;
+}
+#footer .tags {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    overflow: hidden;
+    margin: 0 0 30px;
+    text-align: center;
+    padding: 6px 0 0;
+}
+#footer .tags li {
+    float: left;
+    margin: 0 6px 5px 0;
+}
+#footer .tags a {
+    border: 1px solid #8a8a8a;
+    color: #8a8a8a;
+    padding: 7px 14px;
+    display: block;
+    transition: all 0.25s linear;
+}
+#footer .tags a:hover {
+    color: white;
+}
+#footer .socail-network {
+    font-size: 15px;
+    line-height: 17px;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    padding: 7px 0 0;
+}
+#footer .socail-network li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+#footer .socail-network a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #8a8a8a;
+    color: #8a8a8a;
+    padding: 9px 5px;
+    display: block;
+    transition: all 0.25s linear;
+}
+#footer .socail-network a:hover {
+    color: white;
+}
+#footer .recent-tweet {
+    overflow: hidden;
+    margin: 0;
+}
+#footer .recent-tweet li {
+    overflow: hidden;
+    padding: 23px 0;
+    border-top: 1px dashed #8a8a8a;
+}
+#footer .recent-tweet li:first-child {
+    padding: 0 0 25px;
+    border-top: none;
+}
+#footer .recent-tweet .icon {
+    font-size: 22px;
+    line-height: 25px;
+    color: #8a8a8a;
+    float: left;
+    width: 10%;
+}
+#footer .recent-tweet .txt-holder {
+    width: 90%;
+    float: left;
+    color: #8a8a8a;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 1px 0 0 6px;
+}
+#footer .recent-tweet p {
+    margin: 0 0 10px;
+}
+#footer .recent-tweet a {
+    color: #8a8a8a;
+    transition: all 0.25s linear;
+}
+#footer .recent-tweet time {
+    font-size: 13px;
+    color: #e1e1e1;
+    display: block;
+}
+#footer .footer-nav {
+    overflow: hidden;
+    margin: 0;
+    text-align: right;
+}
+#footer .footer-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 29px;
+}
+#footer .footer-nav a {
+    color: white;
+    display: block;
+    transition: all 0.25s linear;
+}
+#footer .newsletter-form {
+    overflow: hidden;
+    margin: 0 0 36px;
+    padding: 8px 0 0;
+}
+#footer .newsletter-form .form-control {
+    font: 12px/14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #8a8a8a;
+    box-shadow: none;
+    outline: none;
+    background: none;
+    margin: 0 0 10px;
+}
+#footer .newsletter-form .form-control::-webkit-input-placeholder {
+    color: white;
+}
+#footer .newsletter-form .form-control::-moz-placeholder {
+    opacity: 1;
+    color: white;
+}
+#footer .newsletter-form .form-control:-moz-placeholder {
+    color: white;
+}
+#footer .newsletter-form .form-control:-ms-input-placeholder {
+    color: white;
+}
+#footer .newsletter-form .form-control.placeholder {
+    color: white;
+}
+#footer .newsletter-form .btn-primary {
+    font: 14px/16px "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    padding: 13px 10px 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: #33b86c;
+}
